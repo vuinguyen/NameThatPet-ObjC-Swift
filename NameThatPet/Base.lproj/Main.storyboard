@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="cP7-1S-Mg9">
+                                <rect key="frame" x="0.0" y="30" width="0.0" height="216"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="RBR-ms-YAz">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="121"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-Qs-0eI">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.5" height="121"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                </variation>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-3l-uet">
+                                                <rect key="frame" x="139" y="0.0" width="0.0" height="121"/>
+                                            </pickerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gyr-3l-uet" firstAttribute="height" secondItem="RBR-ms-YAz" secondAttribute="height" id="YR1-9e-pnL"/>
+                                            <constraint firstItem="Gyr-3l-uet" firstAttribute="width" secondItem="RBR-ms-YAz" secondAttribute="width" multiplier="0.65" constant="-68.599999999999994" id="dKz-u6-3MG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0xA-fa-SQ9">
+                                        <rect key="frame" x="0.0" y="121" width="0.0" height="30.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suffix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-6w-ehR">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="30.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                </variation>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1IF-q9-UvQ">
+                                                <rect key="frame" x="410" y="0.0" width="51" height="30.5"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHz-z7-5cl">
+                                        <rect key="frame" x="0.0" y="151.5" width="0.0" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Generate Name!"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="generateName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icK-lD-bFm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Displayed Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OlV-MC-a3p">
+                                        <rect key="frame" x="0.0" y="184.5" width="0.0" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0xA-fa-SQ9" firstAttribute="height" secondItem="RBR-ms-YAz" secondAttribute="height" multiplier="0.25" id="SGr-nm-qnc"/>
+                                    <constraint firstItem="PHz-z7-5cl" firstAttribute="height" secondItem="cP7-1S-Mg9" secondAttribute="height" multiplier="0.15" id="fxM-eU-whW"/>
+                                    <constraint firstItem="OlV-MC-a3p" firstAttribute="height" secondItem="cP7-1S-Mg9" secondAttribute="height" multiplier="0.15" id="mmt-ba-yEM"/>
+                                </constraints>
+                            </stackView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImagePet1" translatesAutoresizingMaskIntoConstraints="NO" id="LRn-Vp-M6k">
+                                <rect key="frame" x="-76.5" y="268" width="153" height="192"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gJi-FT-ceU" appends="YES" id="y43-7T-9HD"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OlV-MC-a3p" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="3eT-N7-h18"/>
+                            <constraint firstItem="0xA-fa-SQ9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="7hl-e9-O6P"/>
+                            <constraint firstItem="cP7-1S-Mg9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="9bt-5U-qUe"/>
+                            <constraint firstItem="cP7-1S-Mg9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="PlT-bp-63u"/>
+                            <constraint firstItem="LRn-Vp-M6k" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="SgE-1d-Yv6"/>
+                            <constraint firstItem="RBR-ms-YAz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="W0t-CR-d71"/>
+                            <constraint firstItem="LRn-Vp-M6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZPl-29-6RA"/>
+                            <constraint firstItem="cP7-1S-Mg9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ckD-Q3-2a1"/>
+                            <constraint firstItem="cP7-1S-Mg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n4p-PJ-zKV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LRn-Vp-M6k" secondAttribute="bottom" constant="20" id="sfP-DO-Ha6">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalImageView" destination="LRn-Vp-M6k" id="Ueq-a4-Rns"/>
+                        <outlet property="generatedNameLabel" destination="OlV-MC-a3p" id="ot5-gY-Fch"/>
+                        <outlet property="suffixSwitch" destination="1IF-q9-UvQ" id="L3Q-23-0Lq"/>
+                        <outlet property="titlePicker" destination="Gyr-3l-uet" id="Lv5-lC-guL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gJi-FT-ceU"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="116.25"/>
+        </scene>
+        <!--Pet Photos-->
+        <scene sceneID="wxX-DA-4vk">
+            <objects>
+                <collectionViewController id="CHc-75-nox" customClass="PetPhotosViewController" customModule="NameThatPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HRy-Zw-QWS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8LK-yg-j6E">
+                            <size key="itemSize" width="104" height="92"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PetPhotoCell" id="tl1-ER-B4h" customClass="PetPhotoCell" customModule="NameThatPet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C5P-o5-gX7">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="C5P-o5-gX7" secondAttribute="bottom" id="Otg-uR-eBq"/>
+                                    <constraint firstAttribute="trailing" secondItem="C5P-o5-gX7" secondAttribute="trailing" id="Rdk-0A-nXg"/>
+                                    <constraint firstItem="C5P-o5-gX7" firstAttribute="leading" secondItem="tl1-ER-B4h" secondAttribute="leading" id="RjX-nh-rSW"/>
+                                    <constraint firstItem="C5P-o5-gX7" firstAttribute="top" secondItem="tl1-ER-B4h" secondAttribute="top" id="Rsm-GB-bbz"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="imageView" destination="C5P-o5-gX7" id="Eli-ea-DiT"/>
+                                    <segue destination="l0C-RI-WzF" kind="unwind" identifier="SelectPetPhoto" unwindAction="selectPetPhoto:" id="9Yj-bh-M6g"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="CHc-75-nox" id="ajx-eY-Fpv"/>
+                            <outlet property="delegate" destination="CHc-75-nox" id="4de-EM-XAq"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Pet Photos" id="dUz-aU-3Od">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="AMC-C9-QBA">
+                            <connections>
+                                <segue destination="l0C-RI-WzF" kind="unwind" unwindAction="cancelToRWTViewController:" id="hFd-Qr-sEM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCN-yz-OPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="l0C-RI-WzF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1646.25" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KQv-BP-HHb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HKc-Zl-6MB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4eu-o7-uvZ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CHc-75-nox" kind="relationship" relationship="rootViewController" id="pEq-uk-X3e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2VO-DV-FNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImagePet1" width="153" height="204"/>
+    </resources>
+</document>
