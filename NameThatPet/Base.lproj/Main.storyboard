@@ -132,7 +132,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="gJi-FT-ceU"/>
+                <tapGestureRecognizer id="gJi-FT-ceU">
+                    <connections>
+                        <segue destination="HKc-Zl-6MB" kind="show" identifier="PetPhotosSegue" id="b65-5x-Knf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116.25" y="116.25"/>
         </scene>

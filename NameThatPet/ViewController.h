@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
+#pragma mark - Public, to be accessed by the class's Swift extension
+@property (weak, nonatomic) IBOutlet UIImageView *animalImageView;
 
 @end
 

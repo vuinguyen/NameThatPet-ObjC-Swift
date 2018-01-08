@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *titlePicker;
 @property (weak, nonatomic) IBOutlet UISwitch *suffixSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *generatedNameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *animalImageView;
 
 @end
 
