@@ -11,7 +11,7 @@ you can select a more suitable picture to go with the name that was created!
 
 ## Where To Download It
 To try the app for yourself, you can download it from the
-[App Store](bit.ly/NameThatPet)
+[App Store](http://bit.ly/NameThatPet)
 
 ![Main Screen](/screenshots/MainScreen.png)
 ![Picture Gallery](/screenshots/PictureGallery.png)
@@ -45,7 +45,7 @@ the `ViewController.h` file is made accessible to the `ViewController.swift` fil
 Use the following as a resource for additional info:
 https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
 
-### Importing Swift Code Into Objective-C
+### Importing Swift Into Objective-C
 You can also go the other way around, and import Swift function calls into
 your ObjC files.
 
