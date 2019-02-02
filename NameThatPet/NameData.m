@@ -8,6 +8,9 @@
 
 #import "NameData.h"
 
+// Need the import below to use Swift functions
+#import "NameThatPet-Swift.h"
+
 static const int NumberOfAnimalImages = 12;
 
 @interface NameData()
@@ -88,7 +91,11 @@ static const int NumberOfAnimalImages = 12;
 
 -(NSString *) randomImageName {
   NSString *imageName = @"ImagePet";
-  int randomNumber = arc4random_uniform((uint32_t)NumberOfAnimalImages);
+  // You can optionally use the more syntax friendly Swift wrapper of the arc4random function,
+  // defined in NameData.swift, as shown here.
+  //int randomNumber = arc4random_uniform((uint32_t)NumberOfAnimalImages);
+  int randomNumber = [self random: NumberOfAnimalImages];
+
   imageName = [imageName stringByAppendingString: @(randomNumber).stringValue];
   return imageName;
 }
