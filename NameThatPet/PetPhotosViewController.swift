@@ -23,7 +23,7 @@ class PetPhotosViewController: UICollectionViewController {
       return
     }
 
-    if let upcoming = segue.destination as? ViewController  {
+    if let upcoming = segue.destination as? MainViewController  {
       upcoming.animalImageView.image = selectedImage
     }
   }

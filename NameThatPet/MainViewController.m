@@ -1,15 +1,15 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  NameThatPet
 //
 //  Created by Vui Nguyen on 1/7/18.
 //  Copyright © 2018 Sunfish Empire. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "NameData.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 #pragma mark - Private IBOutlet properties
 @property (weak, nonatomic) IBOutlet UIPickerView *titlePicker;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 #pragma mark - Private
 NSArray *titlePickerData;

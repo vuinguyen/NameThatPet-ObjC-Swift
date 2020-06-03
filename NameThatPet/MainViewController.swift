@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  NameThatPet
 //
 //  Created by Vui Nguyen on 1/8/18.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension ViewController {
+extension MainViewController {
   // MARK: IBActions
-  @IBAction func cancelToRWTViewController(_ segue: UIStoryboardSegue) {
+  @IBAction func cancelToMainViewController(_ segue: UIStoryboardSegue) {
   }
 
   @IBAction func selectPetPhoto(_ segue: UIStoryboardSegue) {
