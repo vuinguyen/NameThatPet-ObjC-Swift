@@ -32,7 +32,7 @@ https://developer.apple.com/documentation/swift/migrating_your_objective-c_code_
 I created a Swift extension file in order to add extra functionality to an
 existing ObjC file whenever possible, rather than rewriting an entire ObjC file in Swift from scratch in one fell swoop. This makes it possible to add new Swift code incrementally to your project, and then you can go back and rewrite the ObjC pieces when you have time.
 
-You can see the use of extensions in this project with the `ViewController`
+You can see the use of extensions in this project with the `MainViewController`
 and `NameData` classes.
 
 ### Importing Objective-C Into Swift
@@ -40,7 +40,7 @@ You can also create completely new Swift files and call ObjC code from within
 your new Swift files.
 
 You can see an example of this where the `animalImageView` property in
-the `ViewController.h` file is made accessible to the `ViewController.swift` file.
+the `MainViewController.h` file is made accessible to the `MainViewController.swift` file.
 
 Use the following as a resource for additional info:
 https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
